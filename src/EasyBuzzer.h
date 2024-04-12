@@ -28,6 +28,16 @@ Github:		https://github.com/evert-arias/EasyBuzzer
 #define max _max
 #endif
 
+#ifdef min
+#undef min
+#endif
+#ifdef max
+#undef max
+#endif
+
+using std::min;
+using std::max;
+
 class EasyBuzzerClass
 {
   public:
