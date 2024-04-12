@@ -44,7 +44,7 @@ void EasyBuzzerClass::beep(unsigned int frequency, unsigned int const onDuration
 	mPauseDuration = pauseDuration ? max(MINIMUM_INTERVAL, pauseDuration) : 0;
 	mSequences = sequences;
 	mFinishedCallbackFunction = NULL;
-	mStartTime = max(millis(), 1);
+	mStartTime = max(millis(), 1UL);
 	mLastRunTime = 0;
 	update();
 }
@@ -58,7 +58,7 @@ void EasyBuzzerClass::beep(unsigned int frequency, unsigned int const onDuration
 	mPauseDuration = pauseDuration ? max(MINIMUM_INTERVAL, pauseDuration) : 0;
 	mSequences = sequences;
 	mFinishedCallbackFunction = finishedCallbackFunction;
-	mStartTime = max(millis(), 1);
+	mStartTime = max(millis(), 1UL);
 	mLastRunTime = 0;
 	update();
 }
